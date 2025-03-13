@@ -1,12 +1,19 @@
 import './App.css';
-import AnimalSearch from './components/AnimalSearch';
+import './assets/styles/styles.css'
 import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Footer from './components/Footer';
+import About from './components/About';
+import Explore from './components/Explore'
 
 const App = () => {
   return(
-    <div className='App'>
+    <div className='body d-flex flex-column min-vh-100'>
       <Navbar/>
-      <AnimalSearch/>
+      <Home/>
+      <About/>
+      <Explore/>
+      <Footer/>
     </div>
   );
 };
