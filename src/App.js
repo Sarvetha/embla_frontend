@@ -11,8 +11,8 @@ const App = () => {
     <div className='body d-flex flex-column min-vh-100'>
       <Navbar/>
       <Home/>
-      <About/>
       <Explore/>
+      <About/>
       <Footer/>
     </div>
   );
