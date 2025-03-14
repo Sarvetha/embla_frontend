@@ -6,7 +6,7 @@ const Home = () => {
             <div className="container">
                 <div className='row'>
                     <div className='banner-text col-lg-6'>
-                        <h1>Welcome to Fauna Finder</h1>
+                        <h1>Welcome to <span className='name'>Fauna Finder</span></h1>
                         <p>Discover the diverse wildlife around you!</p>
                     </div>
                 </div>

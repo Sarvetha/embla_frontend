@@ -15,22 +15,33 @@ h2 {
 
 nav{
     padding: 0 100px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .navbar img{
     width: 20%;
 }
 
+.navbar ul .nav-link{
+    font-size: 18px;
+    font-weight: 600;
+    color: #066f11 !important;
+    margin-right: 14px;
+}
+
+.navbar ul .nav-link:hover {
+    color: #00376e !important; 
+}
+
 .home-banner {
     background-image: url('../images/Banner.png');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 470px;
     display: flex;
     align-items: center;
-    position: relative;
     color: white;
-    top: 8vh;
+    margin-top: 60px;
 }
 
 .banner-text{
@@ -51,6 +62,10 @@ nav{
     font-weight: 600;
 }
 
+.home-banner .banner-text .name{
+    color: #054e0c !important;
+}
+
 .container {
     margin: 0 90px;
 }
@@ -66,6 +81,68 @@ nav{
 
 .explore{
     text-align: center;
+}
+
+.explore .search {
+    width: 50% !important;
+    margin: 0 50px 0 50px;
+}
+
+.explore .btn {
+    color: #fff !important;
+    background-color: #054e0c;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease; /* Smooth transition */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+}
+
+.explore .btn:hover {
+    color: #054e0c !important; /* Text color on hover */
+    background-color: #fff; /* Background color on hover */
+    border: 2px solid #054e0c; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* shadow effect */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.explore h2 {
+    font-weight: 700 !important;
+    font-size: 30px !important;
+    text-transform: uppercase;
+}
+
+.explore .location {
+    font-size: 20px;
+    color: #054e0c !important;
+    font-weight: 600;
+}
+
+.explore .card {
+    padding: 20px;
+    margin: 30px;
+}
+
+.explore .card .card-body {
+    text-align: left;
+}
+
+.explore .card .card-body .card-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #054e0c !important
+}
+
+.explore .card .card-body .card-text {
+    font-size: 16px;
+    text-transform: capitalize;
+    padding-left: 30px;
+}
+
+.explore .card .card-body .sub-title {
+    color: #054e0c !important;
+    font-weight: 600;
 }
 
 footer{
