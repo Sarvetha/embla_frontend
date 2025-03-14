@@ -118,7 +118,7 @@ nav{
 /* Styles for extra large devices - Larger desktops */
 @media (min-width: 1200px) {
     .navbar img{
-        width: 30%;
+        width: 20%;
         margin: 10px;
     }
 
@@ -139,7 +139,7 @@ nav{
     display: flex;
     align-items: center;
     color: white;
-    margin-top: 60px;
+    margin-top: 82px;
 }
 
 .banner-text{
@@ -232,7 +232,7 @@ nav{
 
 /* About section */
 .container {
-    margin: 0 90px;
+    margin: 40px 90px;
 }
 
 .about h1 {
