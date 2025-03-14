@@ -1,3 +1,5 @@
+/* Common stylings */
+
 .body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -13,6 +15,7 @@ h2 {
     font-weight: 600 !important;
 }
 
+/* Navigation section */
 nav{
     padding: 0 100px !important;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -33,6 +36,101 @@ nav{
     color: #00376e !important; 
 }
 
+/* Styles for extra small devices - mobile phones */
+@media (max-width: 576px) {
+    .navbar {
+        padding: 0 !important;
+    }
+
+    .navbar a{
+        padding: 10px 20px;
+        width: 70%;
+    }
+
+    .navbar a img{
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .navbar-toggler {
+        padding-right: 20px;
+        margin-right: 10px;
+    }
+}
+
+/* Styles for small devices - Mobile phones (landscape) & small tablets */
+@media (min-width: 576px) and (max-width: 768px) {
+    .navbar {
+        padding: 0 !important;
+    }
+
+    .navbar a{
+        padding: 10px 20px;
+        width: 70%;
+    }
+
+    .navbar a img{
+        padding: 10px 20px;
+        width: 80%;
+    }
+
+    .navbar-toggler {
+        margin-right: 30px;
+    }
+}
+
+/* Styles for medium devices - tablets */
+@media (min-width: 768px) and (max-width: 992px) {
+    .navbar {
+        padding: 0 !important;
+    }
+
+    .navbar a{
+        padding: 10px 20px;
+        width: 70%;
+    }
+
+    .navbar a img{
+        padding: 10px 20px;
+        width: 80%;
+    }
+
+    .navbar-toggler {
+        margin-right: 30px;
+    }
+}
+
+/* Styles for large devices - Desktops */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .navbar img{
+        width: 50%;
+        margin: 10px;
+    }
+
+    .navbar ul .nav-link{
+        font-size: 20px;
+        font-weight: 600;
+        color: #066f11 !important;
+        margin-right: 14px;
+    }
+}
+
+/* Styles for extra large devices - Larger desktops */
+@media (min-width: 1200px) {
+    .navbar img{
+        width: 30%;
+        margin: 10px;
+    }
+
+    .navbar ul .nav-link{
+        font-size: 20px;
+        font-weight: 600;
+        color: #066f11 !important;
+        margin-right: 14px;
+    }
+}
+
+/* Home Section */
 .home-banner {
     background-image: url('../images/Banner.png');
     background-size: cover;
@@ -66,6 +164,73 @@ nav{
     color: #054e0c !important;
 }
 
+@media (max-width: 576px) {
+    .home-banner {
+        background-image: url('../images/banner-mobile.png');
+        background-size: cover;
+        background-position: top;
+        height: 700px;
+    }
+
+    .banner-text{
+        padding: 350px 30px 0 30px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .banner-text p{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .home-banner {
+        background-image: url('../images/banner-tab.png');
+        background-size: cover;
+        background-position: top;
+        height: 540px;
+    }
+    
+    .banner-text h1{
+        margin-right: 280px;
+    }
+
+    .banner-text p {
+        font-size: 18px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    .home-banner {
+        background-image: url('../images/banner-tab.png');
+        background-size: cover;
+        background-position: top;
+        height: 540px;
+    }
+    
+    .banner-text h1{
+        margin-right: 280px;
+        font-size: 56px !important;
+    }
+
+    .banner-text p {
+        font-size: 18px !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .banner-text h1{
+        font-size: 74px !important;
+    }
+
+    .banner-text p {
+        font-size: 22px !important;
+    }
+}
+
+/* About section */
 .container {
     margin: 0 90px;
 }
@@ -79,12 +244,59 @@ nav{
     text-align: justify;
 }
 
+@media (max-width: 576px){
+    .about {
+        padding: 0 20px;
+    }
+    .about img {
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .about h1{
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+    .about img {
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .about h1{
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    .about img {
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .about h1{
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .about img{
+        margin-top: 30px;
+    }
+    
+    .about .content {
+        padding-left: 40px;
+    }
+}
+
+/* Explore Section */
 .explore{
     text-align: center;
 }
 
 .explore .search {
-    width: 50% !important;
+    width: 80% !important;
     margin: 0 50px 0 50px;
 }
 
@@ -122,6 +334,7 @@ nav{
 .explore .card {
     padding: 20px;
     margin: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
 }
 
 .explore .card .card-body {
@@ -145,6 +358,7 @@ nav{
     font-weight: 600;
 }
 
+/* Footer section */
 footer{
     background-color: #d5e1ee;
     padding-top: 10px;

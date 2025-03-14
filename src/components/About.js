@@ -9,7 +9,7 @@ const About = () => {
                     <div className='col-lg-6'>
                         <img src={aboutImg} alt="Logo" className="d-inline-block me-2" />
                     </div>
-                    <div className='col-lg-6'>
+                    <div className='content col-lg-6'>
                         <h1>About Us</h1>
                         <p>
                             Fauna Finder is an innovative platform designed for wildlife enthusiasts and nature lovers. 
