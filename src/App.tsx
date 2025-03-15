@@ -2,9 +2,10 @@ import './App.css';
 import './assets/styles/styles.css'
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import Footer from './components/Footer';
+import Explore from './components/Explore';
 import About from './components/About';
-import Explore from './components/Explore'
+import Footer from './components/Footer';
+
 
 const App = () => {
   return(

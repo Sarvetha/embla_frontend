@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { AnimalDetails } from '../types/Animal';
 
-const Explore = () => {
-    const [animalName, setAnimalName] = useState('');
-    const [animalDetails, setAnimalDetails] = useState(null);
-    const [error, setError] = useState('');
+const Explore: React.FC = () => {
+    const [animalName, setAnimalName] = useState<string>('');
+    const [animalDetails, setAnimalDetails] = useState<AnimalDetails | null>(null);
+    const [error, setError] = useState<string>('');
 
     const handleSearch = async() => {
         if(!animalName) return; // if empty input, do nothing
         setError('');  // Clear any existing errors
         try{
-            const response = await axios.get(`https://api.api-ninjas.com/v1/animals?name=${animalName}`, {
+            const response = await axios.get<AnimalDetails[]>(`https://api.api-ninjas.com/v1/animals?name=${animalName}`, {
                 headers: { 'X-Api-Key': 'FTh8qQUY5WOUHWhyXIZVMQ==XHnsJ3BxFKRqxqPf'}
             });
 
@@ -30,7 +31,7 @@ const Explore = () => {
         }
     };
 
-    const handleKeyPress = (e) => {
+    const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
         if(e.key === 'Enter') {
             handleSearch();
         }
@@ -61,7 +62,7 @@ const Explore = () => {
                         <h2>{animalDetails.name}</h2>
                         <h4 className="location pt-4">Location : {animalDetails.locations.join(', ') }</h4>
                         <div className="row">
-                            <div class="col-sm-6">
+                            <div className="col-sm-6">
                                 <div className="card mt-4">
                                     <div className="card-body">
                                         <p className="card-title"><strong>Taxonomy</strong></p>
@@ -72,7 +73,7 @@ const Explore = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div className="col-sm-6">
                                 <div className="card mt-4">
                                     <div className="card-body">
                                         <p className="card-title"><strong>Characteristics</strong></p>
